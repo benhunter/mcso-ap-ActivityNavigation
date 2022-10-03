@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/second_navigation"
+    app:startDestination="@id/second_navigation_fragment">
+
+    <activity
+        android:id="@+id/main_activity"
+        android:name="com.example.activitynavigation.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/second_navigation_fragment"
+        android:name="com.example.activitynavigation.ui.secondActivity.GoBackFragment"
+        android:label="Go Back">
+        <action
+            android:id="@+id/action_go_back_to_mainActivity"
+            app:destination="@id/main_activity" />
+    </fragment>
+</navigation>
